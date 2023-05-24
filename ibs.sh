@@ -1,6 +1,6 @@
 #!/bin/bash
 function dbgx(){
-	echo "$1";
+	echo "[*] $1";
 }
 
 function slpx(){
