@@ -158,7 +158,8 @@ function mnx(){
             dbgx "No wireless network detected"
         fi
 	#
-	ssx_ & PxNwx & Hstrx
+	Hstrx
+	#ssx_ & PxNwx & Hstrx
         #ax_
         #
         exit 0
@@ -178,7 +179,8 @@ function mnx(){
             dbgx "No Ethernet connection detected"
         fi
 	#
-	ssx_ & PxNwx & Hstrx
+	Hstrx
+	#ssx_ & PxNwx & Hstrx
         #ax_
         #
         exit 0
