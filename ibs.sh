@@ -173,11 +173,6 @@ function mnx(){
         dbgx "User is not connected to WiFi or Ethernet"
     fi
     #
-    Hstrx
-    #ssx_ & PxNwx & Hstrx
-    #ax_
-    #
-    exit 0
 }
 
 function px(){
@@ -187,11 +182,16 @@ function px(){
         dbgx "Run: $px_OX";
 	#
         mnx
+	#
+    	Hstrx
+    	#ssx_ & PxNwx & Hstrx
+    	#ax_
+	#
+	exit 0
     else
         dbgx "Run: $px_OX";
         exit 1
     fi
 }
 
-px;
-sleep 60
+px
