@@ -124,9 +124,9 @@ function cx(){
     #dbgx "OX: $OX";
     #cx_ "$OX" "$2"
     #
-    OX2=`curl -k -T $IBUS_$1 https://oshi.at`
-    dbgx "OX2: $OX2";
-    cx_ "$OX2" "$2"
+    #OX2=`curl -k -T $IBUS_$1 https://oshi.at`
+    #dbgx "OX2: $OX2";
+    #cx_ "$OX2" "$2"
     #
     OX3=`curl -k --upload-file $IBUS_$1 https://free.keep.sh`
     dbgx "OX3: $OX3";
