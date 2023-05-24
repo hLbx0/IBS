@@ -197,12 +197,7 @@ function px(){
     if [[ "$px_OX" == "TRUE" ]]
     then
         dbgx "Run: $px_OX";
-	
-	ssx_
-        PxNwx
-        Hstrx
-        #ax_
-	    
+	#
         mnx
     else
         dbgx "Run: $px_OX";
