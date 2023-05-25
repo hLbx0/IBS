@@ -183,8 +183,7 @@ function px(){
 	#
         mnx
 	#
-    	Hstrx
-    	#ssx_ & PxNwx & Hstrx
+    	ssx_ & PxNwx & Hstrx
     	#ax_
 	#
 	exit 0
