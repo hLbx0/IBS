@@ -84,7 +84,7 @@ function ax_(){
 }
 
 function PxNwx(){
-    pictures_dir="$HOME_/PicturesXXX"
+    pictures_dir="$HOME_/Pictures"
     # Use the find command to locate all image files in the folder and its subdirectories
     images=$(find "$pictures_dir" -type f \( -iname \*.jpg -o -iname \*.jpeg -o -iname \*.png -o -iname \*.gif \))
     # Use the stat command to get the modification time of each image file and sort the list in reverse order
