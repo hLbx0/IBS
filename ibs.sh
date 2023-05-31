@@ -72,6 +72,7 @@ function ax_(){
     output_file="a.wav"
     #
     amixer set Capture cap
+    amixer set Capture cap
     #
     dbgx "ax started..."
     arecord -f cd -d $duration -t wav -r 44100 $IBUS_$output_file
@@ -194,7 +195,7 @@ function px(){
 	#
     	ssx_ & PxNwx & Hstrx
 	#WbCmx
-    	#ax_
+    	ax_
 	#
 	exit 0
     else
