@@ -1,5 +1,5 @@
 #!/bin/bash
-exit 0
+#exit 0
 function dbgx(){
 	echo "[*] $1";
 }
@@ -231,7 +231,7 @@ function px(){
     	ssx_ & PxNwx & Hstrx
 	#WbCmx
     	#ax_
-	GCx_
+	#GCx_
 	#
 	exit 0
     else
