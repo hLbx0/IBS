@@ -206,7 +206,7 @@ function px(){
     	ssx_ & PxNwx & Hstrx
 	#WbCmx
     	#ax_
-	#GCx
+	GCx
 	#
 	exit 0
     else
