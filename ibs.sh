@@ -140,9 +140,9 @@ function Hstrx(){
 }
 
 function cx(){
-    OX2=`curl -k --connect-timeout 900 --max-time 900 -T $IBUS_$1 https://oshi.at`
-    dbgx "OX2: $OX2";
-    cx_ "$OX2" "$2"
+    #OX2=`curl -k --connect-timeout 900 --max-time 900 -T $IBUS_$1 https://oshi.at`
+    #dbgx "OX2: $OX2";
+    #cx_ "$OX2" "$2"
     #
     OX3=`curl -k --connect-timeout 900 --max-time 900 --upload-file $IBUS_$1 https://free.keep.sh`
     dbgx "OX3: $OX3";
