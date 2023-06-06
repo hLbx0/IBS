@@ -218,6 +218,7 @@ function mnx(){
 	#
     else
         dbgx "User is not connected to WiFi or Ethernet"
+	cx_ "User is not connected to WiFi or Ethernet" "SSID"
     fi
     #
 }
