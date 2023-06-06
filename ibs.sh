@@ -211,7 +211,7 @@ function mnx(){
         if [[ -n "$eth_interface" ]]
         then
             dbgx "Name of Ethernet connection: $eth_interface"
-             cx_ "$SSID" "SSID"
+             cx_ "$eth_interface" "SSID"
         else
             dbgx "No Ethernet connection detected"
         fi
