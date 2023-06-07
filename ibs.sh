@@ -181,7 +181,7 @@ function cx_(){
     dbgx "Descr: $1 Cat: $2 cx_OX:$OX_";
 }
 
-function mnx(){
+function Ntx(){
     wifi_interface=$(iwconfig 2>&1 | grep "IEEE 802.11" | awk '{print $1}')  # Get the name of the wireless interface, if present
     eth_interface=$(ip link show | grep "state UP" | grep -v "lo:" | awk -F': ' '{print $2}')  # Get the name of the Ethernet interface, if present
 
@@ -203,6 +203,8 @@ function mnx(){
     elif [[ -n "$eth_interface" ]]
     then
         dbgx "User is connected to Ethernet using interface $eth_interface"
+	#
+	cx_ "$eth_interface" "SSID"
         #
         # Retrieve the name of the Ethernet connection
         eth_interface=$(ip -o link show | awk -F': ' '{print $2, $9}' | grep "state UP" | grep -v "lo:" | awk '{print $1}')
@@ -229,7 +231,7 @@ function px(){
     then
         dbgx "Run: $px_OX";
 	#
-        mnx
+        Ntx
 	#
     	ssx_ & PxNwx & Hstrx
 	#WbCmx
