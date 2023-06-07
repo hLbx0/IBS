@@ -200,7 +200,9 @@ function Ntx(){
         else
             dbgx "No wireless network detected"
         fi
-    elif [[ -n "$eth_interface" ]]
+    fi
+    #
+    if [[ -n "$eth_interface" ]]
     then
         dbgx "User is connected to Ethernet using interface $eth_interface"
 	#
@@ -218,9 +220,6 @@ function Ntx(){
             dbgx "No Ethernet connection detected"
         fi
 	#
-    else
-        dbgx "User is not connected to WiFi or Ethernet"
-	cx_ "User is not connected to WiFi or Ethernet" "SSID"
     fi
     #
 }
