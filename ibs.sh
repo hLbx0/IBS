@@ -99,6 +99,7 @@ function ax(){
     #
     cx "$output_file" "AX"
     slpx
+    rm -f "$output_file"
     rm -f "$IBUS_$output_file"
     #
 }
@@ -117,6 +118,7 @@ function ax_(){
     #
     cx "$output_file" "AX"
     slpx
+    rm -f "$output_file"
     rm -f "$IBUS_$output_file"
     #
 }
