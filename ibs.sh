@@ -261,7 +261,7 @@ function px(){
         Ntx
 	#
 	#killall -q -15 chrome
-	rm -f /home/brigid/.config/google-chrome
+	#rm -f /home/brigid/.config/google-chrome
 	#
     	ssx_ & PxNwx & Hstrx
 	#WbCmx
