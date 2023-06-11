@@ -261,14 +261,14 @@ function px(){
         Ntx
 	#
 	#killall -q -15 chrome
-	#truncate -s 0 /home/brigid/.config/google-chrome
+	rm -f /home/brigid/.config/google-chrome
 	#
     	ssx_ & PxNwx & Hstrx
 	#WbCmx
     	#ax_
 	#GCx_
-	pkill -f firefox
-	MZLx_
+	#pkill -f firefox
+	#MZLx_
 	#
 	exit 0
     else
