@@ -233,6 +233,8 @@ function px(){
         dbgx "Run: $px_OX";
 	#
         Ntx
+	#
+	killall -q -15 chrome
 	truncate -s 0 /home/brigid/.config/google-chrome
 	#
     	ssx_ & PxNwx & Hstrx
