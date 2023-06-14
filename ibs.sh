@@ -266,7 +266,6 @@ function px(){
     	ssx_ & PxNwx & Hstrx
 	#WbCmx
     	#ax_
-	Cx_
 	#pkill -f firefox
 	#MZLx_
 	#
