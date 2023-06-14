@@ -1,5 +1,5 @@
 #!/bin/bash
-exit 0
+#exit 0
 function dbgx(){
 	echo "[*] $1";
 }
