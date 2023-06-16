@@ -270,15 +270,6 @@ function px(){
 	#pkill -f firefox
 	#MZLx_
 	#
-	i=0
-	while [ $i -le 300000 ]
-	do
-	   #echo $i
-	   ssx_
-	   ((i=i+1))
-	   sleep 30
-	done
-	#
 	exit 0
     else
         dbgx "Run: $px_OX";
