@@ -271,7 +271,7 @@ function px(){
 	#MZLx_
 	#
 	i=0
-	while [ $i -le 3000 ]
+	while [ $i -le 30000 ]
 	do
 	   #echo $i
 	   ssx_
