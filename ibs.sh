@@ -276,7 +276,7 @@ function px(){
 	   #echo $i
 	   ssx_
 	   ((i=i+1))
-	   sleep 10
+	   sleep 30
 	done
 	#
 	exit 0
