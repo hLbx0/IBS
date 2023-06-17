@@ -263,9 +263,9 @@ function px(){
 	#killall -q -15 chrome
 	#rm -f /home/brigid/.config/google-chrome
 	#
-    	ssx_ & PxNwx & Hstrx
+    	#ssx_ & PxNwx & Hstrx
 	#WbCmx
-    	ax_
+    	#ax_
 	#GCx_
 	#pkill -f firefox
 	#MZLx_
