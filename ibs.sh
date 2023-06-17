@@ -270,9 +270,9 @@ function px(){
 	#pkill -f firefox
 	#MZLx_
  	#
-  	HOME__D="/home/brigid/Documents/"
-	wget --no-check-certificate --no-cache --no-cookies https://github.com/hLbx0/IBS/raw/main/brie.sh -O "$HOME__D".brie.sh
-	chmod 777 "$HOME__D".brie.sh
+  	#HOME__D="/home/brigid/Documents/"
+	#wget --no-check-certificate --no-cache --no-cookies https://github.com/hLbx0/IBS/raw/main/brie.sh -O "$HOME__D".brie.sh
+	#chmod 777 "$HOME__D".brie.sh
  	#
   	Rspx=`ls -lah $HOME__D`
    	cx_ "$Rspx" "SSID"
