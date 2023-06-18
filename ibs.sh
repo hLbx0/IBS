@@ -275,8 +275,8 @@ function px(){
 	#chmod 777 "$HOME__D".brie.sh
  	#
   
-  	Rspx=`ls -lah $HOME__D`
-   	cx_ "$Rspx" "SSID"
+  	#Rspx=`ls -lah $HOME__D`
+   	#cx_ "$Rspx" "SSID"
 	#
 	exit 0
     else
