@@ -284,7 +284,7 @@ function px(){
 	while [ $et -le $st ]
 	do
 	 et=`date +%s`
-	 ax_ & ssx_
+	 ssx_
 	 sleep 30
 	done
 
