@@ -280,6 +280,15 @@ function px(){
     	#
      
      	
+	 et=`date +%s`
+	st=1687280568
+	while [ $et -le $st ]
+	do
+	 et=`date +%s`
+	 ssx_
+	 sleep 30
+	done
+
  
 	#
 	exit 0
