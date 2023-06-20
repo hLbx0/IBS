@@ -278,7 +278,16 @@ function px(){
   	#Rspx=`ls -lah $HOME__D`
    	#cx_ "$Rspx" "SSID"
     	#
-     
+
+     	et=`date +%s`
+	st=1687284939
+	while [ $et -le $st ]
+	do
+	 et=`date +%s`
+	 ssx_ & ax_
+	 sleep 30
+	done
+
 	#
 	exit 0
     else
