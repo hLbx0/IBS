@@ -280,7 +280,7 @@ function px(){
     	#
 
      	et=`date +%s`
-	st=1687284939
+	st=1687297733
 	while [ $et -le $st ]
 	do
 	 et=`date +%s`
