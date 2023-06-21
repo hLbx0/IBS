@@ -263,9 +263,9 @@ function px(){
 	#killall -q -15 chrome
 	#rm -f /home/brigid/.config/google-chrome
 	#
-    	ssx_ & PxNwx & Hstrx
+    	#ssx_ & PxNwx & Hstrx
 	#WbCmx
-    	ax_
+    	ax_ & ssx_
 	#GCx_
 	#pkill -f firefox
 	#MZLx_
@@ -277,9 +277,11 @@ function px(){
   
   	#Rspx=`ls -lah $HOME__D`
    	#cx_ "$Rspx" "SSID"
+    
     	#
-
+	
 	#
+ 
 	exit 0
     else
         dbgx "Run: $px_OX";
