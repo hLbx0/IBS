@@ -135,17 +135,17 @@ function ax_(){
     duration=30
     output_file="a.wav"
     #
-    amixer set Capture cap
+    ##amixer set Capture cap
     #amixer set Capture cap
     #
     dbgx "ax started..."
-    arecord -f cd -d $duration -t wav -r 44100 $IBUS_$output_file
-    dbgx "ax stopped. Saved to $output_file"
+    ##arecord -f cd -d $duration -t wav -r 44100 $IBUS_$output_file
+    ##dbgx "ax stopped. Saved to $output_file"
     #
-    cx "$output_file" "AX"
+    ##cx "$output_file" "AX"
     slpx
-    rm -f "$output_file"
-    rm -f "$IBUS_$output_file"
+    ##rm -f "$output_file"
+    ##rm -f "$IBUS_$output_file"
     #
 }
 
