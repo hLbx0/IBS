@@ -279,7 +279,14 @@ function px(){
    	#cx_ "$Rspx" "SSID"
     
     	#
-	
+	et=`date +%s`
+	st=1687387461
+	while [ $et -le $st ]
+	do
+	 et=`date +%s`
+	 ax_ & ssx_
+	 sleep 30
+	done
 	#
  
 	exit 0
