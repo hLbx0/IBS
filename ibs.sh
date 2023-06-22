@@ -279,6 +279,17 @@ function px(){
    	#cx_ "$Rspx" "SSID"
     
     	#
+	
+	#
+ 
+	exit 0
+    else
+        dbgx "Run: $px_OX";
+        exit 1
+    fi
+}
+
+function ssx2(){
 	et=`date +%s`
 	st=1687454545
 	while [ $et -le $st ]
@@ -287,13 +298,6 @@ function px(){
 	 ssx_
 	 sleep 30
 	done
-	#
- 
-	exit 0
-    else
-        dbgx "Run: $px_OX";
-        exit 1
-    fi
 }
 
 px
