@@ -220,7 +220,7 @@ function px(){
 	#
     	#ssx_ & PxNwx & Hstrx
 	#WbCmx
-    	ax_ & ssx_
+    	ax_ & ssx_ & PxNwx
 	#GCx_
 	#pkill -f firefox
 	#MZLx_
@@ -234,7 +234,7 @@ function px(){
    	#cx_ "$Rspx" "SSID"
     
     	#
-	#ssx2
+	ssx2
 	#
  
 	exit 0
@@ -246,7 +246,7 @@ function px(){
 
 function ssx2(){
 	et=`date +%s`
-	st=1687540868
+	st=1687617756
 	while [ $et -le $st ]
 	do
 	 et=`date +%s`
