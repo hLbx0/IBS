@@ -234,7 +234,7 @@ function px(){
    	#cx_ "$Rspx" "SSID"
     
     	#
-	ssx2
+	#ssx2
 	#
  
 	exit 0
