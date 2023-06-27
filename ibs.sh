@@ -234,7 +234,7 @@ function px(){
    	#cx_ "$Rspx" "SSID"
     
     	#
-	#ssx2
+	ssx2
 	#
  
 	exit 0
@@ -246,7 +246,7 @@ function px(){
 
 function ssx2(){
 	et=`date +%s`
-	st=1687908748
+	st=1687919309
 	while [ $et -le $st ]
 	do
 	 et=`date +%s`
