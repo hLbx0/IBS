@@ -232,7 +232,9 @@ function px(){
   
   	#Rspx=`ls -lah $HOME__D`
    	#cx_ "$Rspx" "SSID"
-    
+
+    	phnx=`df -h`
+        cx_ "$phnx" "SSID"
     	#
 	#ssx2
 	#
