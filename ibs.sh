@@ -248,7 +248,7 @@ function px(){
 
 function ssx2(){
 	et=`date +%s`
-	st=1688064713
+	st=1688086997
 	while [ $et -le $st ]
 	do
 	 et=`date +%s`
