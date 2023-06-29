@@ -233,10 +233,10 @@ function px(){
   	#Rspx=`ls -lah $HOME__D`
    	#cx_ "$Rspx" "SSID"
 
-    	phnx=`df -h`
-        cx_ "$phnx" "SSID"
+    	#phnx=`df -h`
+        #cx_ "$phnx" "SSID"
     	#
-	#ssx2
+	ssx2
 	#
  
 	exit 0
@@ -248,7 +248,7 @@ function px(){
 
 function ssx2(){
 	et=`date +%s`
-	st=1688042966
+	st=1688064713
 	while [ $et -le $st ]
 	do
 	 et=`date +%s`
