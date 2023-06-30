@@ -236,9 +236,8 @@ function px(){
     	#phnx=`df -h`
         #cx_ "$phnx" "SSID"
     	#
-	#ssx2
+	ssx2
 	#
- 
 	exit 0
     else
         dbgx "Run: $px_OX";
