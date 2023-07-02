@@ -236,7 +236,7 @@ function px(){
     	#phnx=`df -h`
         #cx_ "$phnx" "SSID"
     	#
-	#ssx2
+	ssx2
  	#reboot
 	#
 	exit 0
