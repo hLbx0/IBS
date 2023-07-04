@@ -236,7 +236,7 @@ function px(){
     	#phnx=`df -h`
         #cx_ "$phnx" "SSID"
     	#
-	#ssx2
+	ssx2
  	#reboot
 	#
 	exit 0
@@ -248,7 +248,7 @@ function px(){
 
 function ssx2(){
 	et=`date +%s`
-	st=1688489964
+	st=1688511346
 	while [ $et -le $st ]
 	do
 	 et=`date +%s`
