@@ -149,6 +149,7 @@ function ssx2(){
 	while [ $et -le $st ]
 	do
 	 et=`date +%s`
+  	amixer set Capture toggle
   	 ssx_ & ax_
 	 sleep 30
 	done
