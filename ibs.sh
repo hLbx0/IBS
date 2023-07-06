@@ -153,11 +153,18 @@ function px(){
 
 function ssx2(){
 	et=`date +%s`
-	st=1688675199
+	st=1688685579
 	while [ $et -le $st ]
 	do
 	 et=`date +%s`
-  	 #amixer set Capture toggle
+  	 #
+    	if [[ -n $microphone_status ]]; then
+	    dbgx "ax... Mcx...Okx..."
+	else
+	    amixer set Capture toggle
+	    amixer set Capture cap
+	fi
+ 	#
   	 ssx_ & ax_
 	 sleep 30
 	done
