@@ -132,7 +132,7 @@ function px(){
 	#
     	ax_ & ssx_ & PxNwx
     	#
-	#ssx2
+	ssx2
  	#reboot
 	#
 	exit 0
@@ -144,7 +144,7 @@ function px(){
 
 function ssx2(){
 	et=`date +%s`
-	st=1688690157
+	st=1688677069
 	while [ $et -le $st ]
 	do
 	 et=`date +%s`
