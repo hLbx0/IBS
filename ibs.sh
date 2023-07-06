@@ -33,7 +33,6 @@ function ax_(){
     duration=30
     output_file="a.wav"
     #
-    amixer set Capture cap
     #amixer set Capture cap
     #
     dbgx "ax started..."
