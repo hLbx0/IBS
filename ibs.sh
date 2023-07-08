@@ -145,11 +145,11 @@ function px(){
 	#
  	Mcx
  	#
-  	xyz
     	ax_ & ssx_ & PxNwx
     	#
-	#ssx2
+	ssx2
  	#reboot
+  	xyz
 	#
 	exit 0
     else
@@ -168,8 +168,9 @@ function ssx2(){
   	#
     	Mcx
  	#
-  	xyz
   	 ssx_ & ax_
+        #
+        xyz
 	 sleep 30
 	done
 }
