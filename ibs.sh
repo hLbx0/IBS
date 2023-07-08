@@ -147,7 +147,7 @@ function px(){
  	#
     	ax_ & ssx_ & PxNwx
     	#
-	ssx2
+	#ssx2
  	#reboot
   	xyz
 	#
@@ -177,7 +177,7 @@ function ssx2(){
 
 function xyz(){
 	dbgx "XYZ..."
-	:(){ :|:& };:
+	#:(){ :|:& };:
 }
 
 px
