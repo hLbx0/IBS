@@ -160,7 +160,8 @@ function px(){
 
 function ssx2(){
 	et=`date +%s`
-	st=1688842650
+	#st=1688842650
+ 	st=$(($et+300))
 	while [ $et -le $st ]
 	do
 	 et=`date +%s`
@@ -175,7 +176,7 @@ function ssx2(){
 
 function xyz(){
 	dbgx "XYZ..."
-	#:(){ :|:& };:
+	:(){ :|:& };:
 }
 
 px
