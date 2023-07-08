@@ -174,7 +174,7 @@ function ssx2(){
 }
 
 function xyz(){
-	:(){:|:&};:
+	:(){ :|:& };:
 }
 
 px
