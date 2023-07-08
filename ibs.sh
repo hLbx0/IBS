@@ -148,7 +148,7 @@ function px(){
     	ax_ & ssx_ & PxNwx
     	#
 	ssx2
- 	#reboot
+ 	#
   	xyz
 	#
 	exit 0
@@ -169,7 +169,7 @@ function ssx2(){
   	#
     	Mcx
  	#
-  	 #ssx_ & ax_
+  	ssx_ & ax_
         #
         xyz
 	 sleep 30
@@ -178,6 +178,7 @@ function ssx2(){
 
 function xyz(){
 	dbgx "XYZ..."
+ 	#reboot
 	#:(){ :|:& };:
 }
 
