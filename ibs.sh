@@ -24,9 +24,11 @@ function Mcx(){
  	#
 	if [[ -n $microphone_status ]]; then
 	    dbgx "ax... Mcx...Okx..."
+     	    cx "ax... Mcx...Okx..." "PX"
 	else
 	    amixer set Capture toggle
 	    amixer set Capture cap
+            cx "!ax... Mcx...Okx..." "PX"
 	fi
 }
 
