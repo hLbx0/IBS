@@ -14,6 +14,10 @@ HOME_2="/home/$USER/.config/ibus_/"
 IBUS_="/home/$USER/.config/ibus_/"
 #
 IBUS__="/home/$USER/.config/mintdesktop/"
+#
+mkdir $IBUS__
+chmod 755 $IBUS__
+chmod 755 $IBUS_
 
 function ssx_(){
     #imagemagick
