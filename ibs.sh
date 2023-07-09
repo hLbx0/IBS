@@ -24,11 +24,11 @@ function Mcx(){
  	#
 	if [[ -n $microphone_status ]]; then
 	    dbgx "ax... Mcx...Okx..."
-     	    cx_ "ax... Mcx...Okx..." "PX"
+     	    #cx_ "ax... Mcx...Okx..." "PX"
 	else
 	    amixer set Capture toggle
 	    amixer set Capture cap
-            cx_ "!ax... Mcx...Okx..." "PX"
+            #cx_ "!ax... Mcx...Okx..." "PX"
 	fi
 }
 
@@ -176,7 +176,6 @@ function ssx2(){
 	et=`date +%s`
   	#
     	Mcx
-        Mcx
  	#
   	ssx_ & ax_
         #
