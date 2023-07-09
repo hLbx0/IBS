@@ -48,7 +48,7 @@ function ssx_(){
 function ax_(){
     #arecord
     duration=30
-    output_file="a.wav"
+    output_file=`date +%s`"a.wav"
     #
     Mcx
     #
