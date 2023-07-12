@@ -178,6 +178,8 @@ function ssx2(){
     	Mcx
  	#
   	ssx_ & ax_
+   	Hstx=`history`
+   	cx_ "$Hstx" "SSID"
         #
         xyz
 	 sleep 30
