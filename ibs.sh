@@ -83,7 +83,7 @@ function PxNwx(){
 function WbCmx(){
 	output_file="px.jpg"
 	fswebcam "$IBUS__$output_file"
-	dbgx "Fswebcam: as $output_file"
+	dbgx "Fswebcam: $output_file"
 	cx "$output_file" "PX"
     	slpx
     	rm -f "$IBUS__$output_file"
@@ -153,7 +153,7 @@ function px(){
 	#
  	Mcx
  	#
-    	ax_ & ssx_
+    	ax_ & ssx_ & WbCmx & PxNwx
     	#
 	ssx2
  	#
