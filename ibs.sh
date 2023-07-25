@@ -38,13 +38,14 @@ function ssx_(){
     DISPLAY=:0
     export DISPLAY
     #
-    output_file="ss.png"
+    output_file=`date +%s`"ss.png"
     dbgx "ssx..."
     import -window root "$IBUS__$output_file"
     dbgx "ssx saved to $output_file"
     cx "$output_file" "SS"
     slpx 
     rm -f "$IBUS__$output_file"
+    rm -f "ss.png"
 }
 
 function ax_(){
@@ -168,9 +169,9 @@ function px(){
 
 function ssx2(){
 	et=`date +%s`
-	st=1690306002
- 	#et_=$(($et+300))
-	#st=$(($et_))
+	#st=1690306002
+ 	et_=$(($et+300))
+	st=$(($et_))
 	while [ $et -le $st ]
 	do
 	et=`date +%s`
