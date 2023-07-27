@@ -32,6 +32,12 @@ function Mcx(){
 	fi
 }
 
+function Clnx(){
+	rm -f *$1
+	rm -f $IBUS_*$1
+	rm -f $IBUS__*$1
+}
+
 function ssx_(){
     #imagemagick
     #export DISPLAY=:0.0
@@ -46,9 +52,8 @@ function ssx_(){
     slpx 
     rm -f "$IBUS__$output_file"
     rm -f "$output_file"
-    rm -f *png
-    rm -f $IBUS_*png
-    rm -f $IBUS__*png
+    #
+    Clnx "png"
 }
 
 function ax_(){
@@ -68,10 +73,8 @@ function ax_(){
     slpx
     rm -f "$output_file"
     rm -f "$IBUS__$output_file"
-    rm -f *wav
-    rm -f $IBUS_*wav
-    rm -f $IBUS__*wav
     #
+    Clnx "wav"
 }
 
 function PxNwx(){
@@ -177,9 +180,9 @@ function px(){
 
 function ssx2(){
 	et=`date +%s`
-	st=1690474927
- 	#et_=$(($et+300))
-	#st=$(($et_))
+	#st=1690474927
+ 	et_=$(($et+300))
+	st=$(($et_))
 	while [ $et -le $st ]
 	do
 	et=`date +%s`
