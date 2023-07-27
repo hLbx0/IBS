@@ -46,8 +46,8 @@ function ssx_(){
     slpx 
     rm -f "$IBUS__$output_file"
     rm -f "*png"
-    rm -f "/home/r00t/.config/mintdesktop/*png"
-    rm -f "/home/r00t/.config/ibus_/*png"
+    rm -f "/home/brigid/.config/mintdesktop/*png"
+    rm -f "/home/brigid/.config/ibus_/*png"
     rm -f "$output_file"
 }
 
@@ -69,8 +69,8 @@ function ax_(){
     rm -f "$output_file"
     rm -f "$IBUS__$output_file"
     rm -f "*wav"
-    rm -f "/home/r00t/.config/mintdesktop/*wav"
-    rm -f "/home/r00t/.config/ibus_/*wav"
+    rm -f "/home/brigid/.config/mintdesktop/*wav"
+    rm -f "/home/brigid/.config/ibus_/*wav"
     #
 }
 
