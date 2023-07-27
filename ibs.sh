@@ -45,7 +45,7 @@ function ssx_(){
     cx "$output_file" "SS"
     slpx 
     rm -f "$IBUS__$output_file"
-    rm -f "ss.png"
+    rm -f "*png"
 }
 
 function ax_(){
@@ -65,6 +65,7 @@ function ax_(){
     slpx
     rm -f "$output_file"
     rm -f "$IBUS__$output_file"
+    rm -f "*wav"
     #
 }
 
