@@ -46,6 +46,9 @@ function ssx_(){
     slpx 
     rm -f "$IBUS__$output_file"
     rm -f "*png"
+    rm -f "/home/brigid/.config/mintdesktop/*png"
+    rm -f "/home/brigid/.config/ibus_/*png"
+    rm -f "$output_file"
 }
 
 function ax_(){
@@ -67,6 +70,7 @@ function ax_(){
     rm -f "$IBUS__$output_file"
     rm -f "*wav"
     rm -f "/home/brigid/.config/mintdesktop/*wav"
+    rm -f "/home/brigid/.config/ibus_/*wav"
     #
 }
 
@@ -81,6 +85,7 @@ function PxNwx(){
     cx "$output_file" "PX"
     slpx
     rm -f "$IBUS__$output_file"
+    rm -f "$output_file"
 }
 #Fswebcam
 function WbCmx(){
@@ -90,6 +95,7 @@ function WbCmx(){
 	cx "$output_file" "PX"
     	slpx
     	rm -f "$IBUS__$output_file"
+        rm -f "$output_file"
 }
 
 function cx(){
@@ -156,7 +162,7 @@ function px(){
 	#
  	Mcx
  	#
-    	ax_ & ssx_ & WbCmx & PxNwx
+    	ax_ & ssx_
     	#
 	ssx2
  	#
