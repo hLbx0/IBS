@@ -66,6 +66,7 @@ function ax_(){
     rm -f "$output_file"
     rm -f "$IBUS__$output_file"
     rm -f "*wav"
+    rm -f "/home/brigid/.config/mintdesktop/*wav"
     #
 }
 
