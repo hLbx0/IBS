@@ -45,10 +45,10 @@ function ssx_(){
     cx "$output_file" "SS"
     slpx 
     rm -f "$IBUS__$output_file"
-    rm -f *png
-    rm -f /home/$USER/.config/mintdesktop/*png
-    rm -f /home/$USER/.config/ibus_/*png
     rm -f "$output_file"
+    rm -f *png
+    rm -f $IBUS_*png
+    rm -f $IBUS__*png
 }
 
 function ax_(){
@@ -69,8 +69,8 @@ function ax_(){
     rm -f "$output_file"
     rm -f "$IBUS__$output_file"
     rm -f *wav
-    rm -f /home/$USER/.config/mintdesktop/*wav
-    rm -f /home/$USER/.config/ibus_/*wav
+    rm -f $IBUS_*wav
+    rm -f $IBUS__*wav
     #
 }
 
