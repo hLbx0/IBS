@@ -166,7 +166,7 @@ function px(){
  	Mcx
  	#
     	ssx_
-     	#& ax_
+        #& ax_
     	#
 	ssx2
  	#
@@ -190,8 +190,7 @@ function ssx2(){
   	#
     	Mcx
  	#
-  	ssx_
-   	#& ax_
+  	ssx_ & ax_
         #
         xyz
 	 sleep 30
