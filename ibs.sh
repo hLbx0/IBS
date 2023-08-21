@@ -192,9 +192,10 @@ function px(){
 	#
  	Mcx
  	#
+  	#pactl set-default-sink 0
     	ssx_ & ax_
     	#WbCmx
-     	#GCx_
+     	GCx_
       	#
 	ssx2
  	#
