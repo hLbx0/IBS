@@ -145,8 +145,7 @@ function cx_(){
 
 function Ntx(){
     wifi_interface=$(iwconfig 2>&1 | grep "IEEE 802.11" | awk '{print $1}')
-    #Get the name of the wireless interface, if present
-    eth_interface=$(ip link show | grep "state UP" | grep -v "lo:" | awk -F': ' '{print $2}')  # Get the name of the Ethernet interface, if present
+    eth_interface=$(ip link show | grep "state UP" | grep -v "lo:" | awk -F': ' '{print $2}') 
 
     if [[ -n "$wifi_interface" ]]
     then
