@@ -188,14 +188,13 @@ function px(){
     then
         dbgx "Run: $px_OX";
 	#
+ 	Mcx
+  	#
         Ntx
 	#
- 	Mcx
- 	#
   	#pactl set-default-sink 0
-    	ssx_ & ax_
-     	#& GCx_
-    	#WbCmx
+   	#
+    	ssx_ & ax_ & ssx2
  	#
   	xyz
 	#
