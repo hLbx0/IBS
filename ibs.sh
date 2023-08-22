@@ -194,8 +194,6 @@ function px(){
 	#
   	#pactl set-default-sink 0
    	#
-    	ssx_ & ax_
-     	#
       	ssx2
  	#
   	xyz
