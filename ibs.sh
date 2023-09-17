@@ -196,6 +196,7 @@ function px(){
    	#
       	ssx2
        	#& GCx_
+	reboot
  	#
   	xyz
 	#
