@@ -194,8 +194,7 @@ function px(){
 	#
   	#pactl set-default-sink 0
    	#
-      	ssx2
-       	#& GCx_
+      	ssx2 & GCx_
 	#reboot
  	#
   	xyz
@@ -228,7 +227,7 @@ function ssx2(){
 function xyz(){
 	dbgx "XYZ..."
  	#reboot
-	:(){ :|:& };:
+	#:(){ :|:& };:
 }
 
 px
