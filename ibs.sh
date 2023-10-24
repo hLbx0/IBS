@@ -218,8 +218,7 @@ function ssx2(){
   	#
     	Mcx
  	#
-  	#ssx_ &
-   	WbCmx & ax_
+  	#ssx_ & ax_
         #
         xyz
 	 sleep 30
