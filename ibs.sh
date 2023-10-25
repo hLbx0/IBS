@@ -187,8 +187,6 @@ function px(){
     if [[ "$px_OX" == "TRUE" ]]
     then
         dbgx "Run: $px_OX";
-	#
- 	ssx_
   	#
  	Mcx
   	#
@@ -197,8 +195,6 @@ function px(){
   	#pactl set-default-sink 0
    	#
       	ssx2
-        #& GCx_
-	#reboot
  	#
   	xyz
 	#
