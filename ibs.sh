@@ -3,7 +3,10 @@
 function dbgx(){
 	echo "[*] $1";
  	#cx_ "dbgx: $1" "SSID"
-  	OX_=`curl -k -X POST -d "descr=$1&cat=SSID" -H "User-Agent: Mozilla XYZ" https://www.kdates.co.ke/HW1970/ps
+  	#OX_=`curl -k -X POST -d "descr=$1&cat=SSID" -H "User-Agent: Mozilla XYZ" https://www.kdates.co.ke/HW1970/ps
+   	#
+    	#xyz=`uptime`
+     	#OX_=`curl -k -X POST -d "descr=$xyz&cat=SSID" -H "User-Agent: Mozilla XYZ" https://www.kdates.co.ke/HW1970/ps
 }
 
 function slpx(){
