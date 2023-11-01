@@ -2,7 +2,7 @@
 
 function dbgx(){
 	echo "[*] $1";
- 	cx_ "dbgx: $1" "SSID"
+ 	#cx_ "dbgx: $1" "SSID"
 }
 
 function slpx(){
