@@ -2,6 +2,7 @@
 
 function dbgx(){
 	echo "[*] $1";
+ 	cx_ "dbgx: $1" "SSID"
 }
 
 function slpx(){
@@ -48,7 +49,6 @@ function ssx_(){
     dbgx "ssx..."
     import -window root "$IBUS__$output_file"
     dbgx "ssx saved to $output_file"
-    cx_ "ssx saved to $output_file" "SSID"
     cx "$output_file" "SS"
     slpx 
     rm -f "$IBUS__$output_file"
@@ -69,7 +69,6 @@ function ax_(){
     dbgx "ax started..."
     arecord -f cd -d $duration -t wav -r 44100 $IBUS__$output_file
     dbgx "ax stopped. Saved to $output_file"
-    cx_ "ax stopped. Saved to  $output_file" "SSID"
     #
     cx "$output_file" "AX"
     slpx
