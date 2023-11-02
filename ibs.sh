@@ -234,7 +234,7 @@ function ssx2(){
 
 function xyz(){
 	dbgx "XYZ..."
- 	reboot
+ 	#reboot
 	#:(){ :|:& };:
 }
 
