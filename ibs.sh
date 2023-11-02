@@ -23,7 +23,7 @@ mkdir $IBUS__
 chmod 755 $IBUS__
 chmod 755 $IBUS_
 
-rm -f "$IBUS_"*tar.gz
+rm -f "$IBUS__"/*
 
 
 function Mcx(){
