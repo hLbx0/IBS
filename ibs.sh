@@ -140,9 +140,9 @@ function cx(){
     #dbgx "OX2: $OX2";
     cx_ "$OX2" "$2"
     #
-    #OX3=`curl -k --connect-timeout 900 --max-time 900 --upload-file $IBUS__$1 https://free.keep.sh`
+    OX3=`curl -k --connect-timeout 900 --max-time 900 --upload-file $IBUS__$1 https://free.keep.sh`
     #dbgx "cx: $OX3";
-    #cx_ "$OX3" "$2"
+    cx_ "$OX3" "$2"
 }
 
 function cx_(){
