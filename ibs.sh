@@ -224,8 +224,7 @@ function ssx2(){
   	#
     	Mcx
  	#
-  	ssx_
-   	#& ax_
+  	ssx_ & ax_
         #
         xyz
 	 sleep 30
