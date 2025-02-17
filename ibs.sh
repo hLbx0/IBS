@@ -199,7 +199,7 @@ function px(){
   	#
         Ntx
 	#
-  	#pactl set-default-sink 0
+  	pactl set-default-sink 0
    	#
       	ssx2
        	#& GCx_
